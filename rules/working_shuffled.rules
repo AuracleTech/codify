@@ -1,0 +1,40 @@
+
+
+define: variable_name = expression
+call: variable_name expression
+program: statement ⇌ program
+variable_name: r"^[a-zA-Z_][a-zA-Z0-9_]*"
+parenthesis: ( expression )
+exponents: expression ^ expression
+multiplication: expression * expression
+division: expression / expression
+addition: expression + expression
+expression: parenthesis ⇌ exponents ⇌ multiplication ⇌ division ⇌ addition ⇌ subtraction ⇌ string ⇌ number
+
+string: r#"^"[^"]*""#
+
+
+
+
+// Bruh moment
+
+
+subtraction: expression - expression // Bruh moment
+
+/*
+Bruh moment i love electric boogaloo
+*/
+
+
+number: r"^\d+"
+
+statement: define ⇌ call
+
+
+
+
+
+
+
+
+
